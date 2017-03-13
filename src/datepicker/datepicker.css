@@ -1,0 +1,24 @@
+.date-picker {
+    border-collapse: collapse;
+}
+
+.date-header {
+    padding: 5px;
+    text-align: center;
+    background-color: #c6c6c6;
+}
+
+.date-cell {
+    padding: 5px;
+    text-align: center;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.date-cell:hover {
+    background-color: #96bcf5;
+}
+
+.date-current-month {
+    background-color: #f0f0f0;
+}

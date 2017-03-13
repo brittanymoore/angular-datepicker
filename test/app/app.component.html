@@ -1,0 +1,6 @@
+<h1>Datepicker Test</h1>
+{{form.value | json}}
+<form #form="ngForm" (ngSubmit)="onSubmit()" novalidate>
+    <date-picker name="date" ngModel ngDefaultControl></date-picker>
+    <input type="submit" value="Submit" />
+</form>

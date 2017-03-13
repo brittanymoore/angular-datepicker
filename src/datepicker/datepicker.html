@@ -1,0 +1,15 @@
+<input type="text" [ngModel]="dateString" disabled /><button (click)="toggleCalendar()">Pick</button>
+<div *ngIf="calendarActive">
+    <table class="date-picker">
+        <thead>
+            <th class="date-header" *ngFor="let day of daysOfWeek">{{day}}</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let week of calendar">
+                <td *ngFor="let date of week" [ngClass]="{'date-cell': true, 'date-current-month': date.isCurrentMonth}" (click)="onDateSelect(date)">
+                    {{date.date.day}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
